@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>산그리메 B2B 카달로그</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f4f1eb;
+      font-family: Arial, 'Noto Sans KR', sans-serif;
+    }
+
+    .top {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255,255,255,0.95);
+      border-bottom: 1px solid #e5e0d8;
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .top a {
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .title {
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 0.04em;
+    }
+
+    .catalog {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 16px 60px;
+    }
+
+    .page {
+      width: 100%;
+      display: block;
+      margin: 0 auto 24px;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+
+    @media (max-width: 768px) {
+      .catalog {
+        padding: 12px 0 40px;
+      }
+
+      .page {
+        border-radius: 0;
+        margin-bottom: 10px;
+        box-shadow: none;
+      }
+
+      .title {
+        font-size: 13px;
+      }
+
+      .top a {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="top">
+    <a href="../">← 첫 화면</a>
+    <div class="title">OEM · B2B CATALOG</div>
+    <a href="../catalog-01/">제품 카달로그 →</a>
+  </header>
+
+  <main class="catalog">
+    <img class="page" src="./images/01.png" alt="산그리메 B2B 카달로그 1페이지">
+    <img class="page" src="./images/02.png" alt="산그리메 B2B 카달로그 2페이지">
+    <img class="page" src="./images/03.png" alt="산그리메 B2B 카달로그 3페이지">
+
+</body>
+</html>
