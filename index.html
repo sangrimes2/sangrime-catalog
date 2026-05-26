@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>산그리메 웹카달로그</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, 'Noto Sans KR', sans-serif;
+      background: #f8f5ef;
+      color: #222;
+    }
+
+    .wrap {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .brand {
+      font-size: 16px;
+      letter-spacing: 0.22em;
+      color: #6b5c48;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin: 0 0 16px;
+      font-weight: 800;
+    }
+
+    .sub {
+      font-size: 17px;
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 45px;
+    }
+
+    .catalog-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      width: 100%;
+      max-width: 760px;
+    }
+
+    .card {
+      display: block;
+      background: #fff;
+      padding: 38px 28px;
+      border-radius: 24px;
+      text-decoration: none;
+      color: #222;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: 0.25s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+    }
+
+    .card .label {
+      font-size: 13px;
+      letter-spacing: 0.16em;
+      color: #9a8366;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    .card h2 {
+      margin: 0 0 12px;
+      font-size: 25px;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 15px;
+      color: #777;
+      line-height: 1.5;
+    }
+
+    .footer {
+      margin-top: 60px;
+      font-size: 13px;
+      color: #999;
+    }
+
+    @media (max-width: 640px) {
+      h1 {
+        font-size: 30px;
+      }
+
+      .sub {
+        font-size: 15px;
+      }
+
+      .catalog-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <div class="brand">SANGRIME</div>
+
+    <h1>산그리메 웹카달로그</h1>
+
+    <p class="sub">
+      산그리메 제품 카달로그를 확인하실 수 있습니다.<br>
+      원하시는 언어의 카달로그를 선택해 주세요.
+    </p>
+
+    <div class="catalog-list">
+      <a class="card" href="./kr/">
+        <div class="label">KOREAN</div>
+        <h2>국문판 카달로그</h2>
+        <p>산그리메의 제품과 브랜드 소개를 국문으로 확인하실 수 있습니다.</p>
+      </a>
+
+      <a class="card" href="./en/">
+        <div class="label">ENGLISH</div>
+        <h2>English Catalog</h2>
+        <p>View Sangrime’s product and brand catalog in English.</p>
+      </a>
+    </div>
+
+    <div class="footer">
+      © SANGRIME / Hapcheon Medical Herbs
+    </div>
+  </main>
+</body>
+</html>
