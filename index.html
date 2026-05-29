@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>산그리메 국문판 카달로그</title>
+  <title>산그리메 웹카달로그</title>
 
   <style>
     * {
@@ -12,101 +12,135 @@
 
     body {
       margin: 0;
-      background: #f4f1eb;
       font-family: Arial, 'Noto Sans KR', sans-serif;
+      background: #f8f5ef;
+      color: #222;
     }
 
-    .top {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: rgba(255,255,255,0.95);
-      border-bottom: 1px solid #e5e0d8;
-      padding: 14px 20px;
+    .wrap {
+      min-height: 100vh;
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
+      padding: 50px 20px;
+      text-align: center;
     }
 
-    .top a {
-      text-decoration: none;
-      color: #333;
-      font-size: 14px;
+    .brand {
+      font-size: 16px;
+      letter-spacing: 0.22em;
+      color: #6b5c48;
+      margin-bottom: 20px;
     }
 
-    .title {
-      font-weight: 700;
-      font-size: 15px;
-      letter-spacing: 0.04em;
+    h1 {
+      font-size: 42px;
+      margin: 0 0 16px;
+      font-weight: 800;
     }
 
-    .catalog {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 30px 16px 60px;
+    .sub {
+      font-size: 17px;
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 45px;
     }
 
-    .page {
+    .catalog-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
       width: 100%;
-      display: block;
-      margin: 0 auto 24px;
-      border-radius: 8px;
-      background: #fff;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      max-width: 760px;
     }
 
-    @media (max-width: 768px) {
-      .catalog {
-        padding: 12px 0 40px;
+    .card {
+      display: block;
+      background: #fff;
+      padding: 38px 28px;
+      border-radius: 24px;
+      text-decoration: none;
+      color: #222;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: 0.25s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+    }
+
+    .card .label {
+      font-size: 13px;
+      letter-spacing: 0.16em;
+      color: #9a8366;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    .card h2 {
+      margin: 0 0 12px;
+      font-size: 25px;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 15px;
+      color: #777;
+      line-height: 1.5;
+    }
+
+    .footer {
+      margin-top: 60px;
+      font-size: 13px;
+      color: #999;
+    }
+
+    @media (max-width: 640px) {
+      h1 {
+        font-size: 30px;
       }
 
-      .page {
-        border-radius: 0;
-        margin-bottom: 10px;
-        box-shadow: none;
+      .sub {
+        font-size: 15px;
       }
 
-      .title {
-        font-size: 13px;
-      }
-
-      .top a {
-        font-size: 13px;
+      .catalog-list {
+        grid-template-columns: 1fr;
       }
     }
   </style>
 </head>
 
 <body>
-  <header class="top">
-    <a href="../">← 첫 화면</a>
-    <div class="title">국문판 카달로그</div>
-    <a href="../en/">English →</a>
-  </header>
+  <main class="wrap">
+    <div class="brand">SANGRIME</div>
 
-  <main class="catalog">
-    <img class="page" src="./images/01.png" alt="산그리메 국문판 카달로그 1페이지">
-    <img class="page" src="./images/02.png" alt="산그리메 국문판 카달로그 2페이지">
-    <img class="page" src="./images/03.png" alt="산그리메 국문판 카달로그 3페이지">
-    <img class="page" src="./images/04.png" alt="산그리메 국문판 카달로그 4페이지">
-    <img class="page" src="./images/05.png" alt="산그리메 국문판 카달로그 5페이지">
-    <img class="page" src="./images/06.png" alt="산그리메 국문판 카달로그 6페이지">
-    <img class="page" src="./images/07.png" alt="산그리메 국문판 카달로그 7페이지">
-    <img class="page" src="./images/08.png" alt="산그리메 국문판 카달로그 8페이지">
-    <img class="page" src="./images/09.png" alt="산그리메 국문판 카달로그 9페이지">
-    <img class="page" src="./images/10.png" alt="산그리메 국문판 카달로그 10페이지">
-    <img class="page" src="./images/11.png" alt="산그리메 국문판 카달로그 11페이지">
-    <img class="page" src="./images/12.png" alt="산그리메 국문판 카달로그 12페이지">
-    <img class="page" src="./images/13.png" alt="산그리메 국문판 카달로그 13페이지">
-    <img class="page" src="./images/14.png" alt="산그리메 국문판 카달로그 14페이지">
-    <img class="page" src="./images/15.png" alt="산그리메 국문판 카달로그 15페이지">
-    <img class="page" src="./images/16.png" alt="산그리메 국문판 카달로그 16페이지">
-    <img class="page" src="./images/17.png" alt="산그리메 국문판 카달로그 17페이지">
-    <img class="page" src="./images/18.png" alt="산그리메 국문판 카달로그 18페이지">
-    <img class="page" src="./images/19.png" alt="산그리메 국문판 카달로그 19페이지">
-    <img class="page" src="./images/20.png" alt="산그리메 국문판 카달로그 20페이지">
-    <img class="page" src="./images/21.png" alt="산그리메 국문판 카달로그 21페이지">
-    <img class="page" src="./images/22.png" alt="산그리메 국문판 카달로그 22페이지">
+    <h1>산그리메 웹카달로그</h1>
+
+    <p class="sub">
+      산그리메 제품 카달로그를 확인하실 수 있습니다.<br>
+      원하시는 언어의 카달로그를 선택해 주세요.
+    </p>
+
+    <div class="catalog-list">
+      <a class="card" href="./kr/">
+        <div class="label">KOREAN</div>
+        <h2>국문판 카달로그</h2>
+        <p>산그리메의 제품과 브랜드 소개를 국문으로 확인하실 수 있습니다.</p>
+      </a>
+
+      <a class="card" href="./en/">
+        <div class="label">ENGLISH</div>
+        <h2>English Catalog</h2>
+        <p>View Sangrime’s product and brand catalog in English.</p>
+      </a>
+    </div>
+
+    <div class="footer">
+      © SANGRIME / Hapcheon Medical Herbs
+    </div>
   </main>
 </body>
 </html>
